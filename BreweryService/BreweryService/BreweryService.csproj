@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="6.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BreweryService.Common\BreweryService.Common.csproj" />
+    <ProjectReference Include="..\BreweryService.Data\BreweryService.Data.csproj" />
+    <ProjectReference Include="..\BreweryService.Service\BreweryService.Service.csproj" />
+  </ItemGroup>
+
+</Project>
